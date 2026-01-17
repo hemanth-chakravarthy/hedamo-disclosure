@@ -16,6 +16,8 @@ export interface Product {
   updatedAt: string;
   evidenceCount: number;
   versions: Version[];
+  description?: string;
+  imageUrl: string;
 }
 
 export const PRODUCTS: Product[] = [
@@ -27,6 +29,7 @@ export const PRODUCTS: Product[] = [
     status: 'Published',
     updatedAt: '2024-05-12T14:30:00Z',
     evidenceCount: 4,
+    imageUrl: 'https://images.unsplash.com/photo-1532634993-15f421e42ec0?w=400&h=300&fit=crop',
     versions: [
       { id: 'v2', timestamp: '2024-05-12T14:30:00Z', status: 'Published', declaredBy: 'Sarah Jenkins' },
       { id: 'v1', timestamp: '2024-05-10T09:15:00Z', status: 'Submitted', declaredBy: 'Sarah Jenkins' }
@@ -40,6 +43,7 @@ export const PRODUCTS: Product[] = [
     status: 'Draft',
     updatedAt: '2024-05-14T11:00:00Z',
     evidenceCount: 0,
+    imageUrl: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=400&h=300&fit=crop',
     versions: [
       { id: 'v1', timestamp: '2024-05-14T11:00:00Z', status: 'Draft', declaredBy: 'Marcus Zhao' }
     ]
@@ -52,6 +56,7 @@ export const PRODUCTS: Product[] = [
     status: 'Submitted',
     updatedAt: '2024-05-13T16:45:00Z',
     evidenceCount: 2,
+    imageUrl: 'https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=400&h=300&fit=crop',
     versions: [
       { id: 'v1', timestamp: '2024-05-13T16:45:00Z', status: 'Submitted', declaredBy: 'Robert Chen' }
     ]
@@ -64,6 +69,7 @@ export const PRODUCTS: Product[] = [
     status: 'Published',
     updatedAt: '2024-05-10T10:20:00Z',
     evidenceCount: 5,
+    imageUrl: 'https://images.unsplash.com/photo-1584820927498-cfe5211fd8bf?w=400&h=300&fit=crop',
     versions: [
       { id: 'v3', timestamp: '2024-05-10T10:20:00Z', status: 'Published', declaredBy: 'Dr. Elena Rodriguez' },
       { id: 'v2', timestamp: '2024-05-08T14:15:00Z', status: 'Submitted', declaredBy: 'Dr. Elena Rodriguez' },
@@ -78,6 +84,7 @@ export const PRODUCTS: Product[] = [
     status: 'Published',
     updatedAt: '2024-05-11T13:00:00Z',
     evidenceCount: 3,
+    imageUrl: 'https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=400&h=300&fit=crop',
     versions: [
       { id: 'v2', timestamp: '2024-05-11T13:00:00Z', status: 'Published', declaredBy: 'Alex Thompson' },
       { id: 'v1', timestamp: '2024-05-09T11:45:00Z', status: 'Submitted', declaredBy: 'Alex Thompson' }
@@ -91,6 +98,7 @@ export const PRODUCTS: Product[] = [
     status: 'Draft',
     updatedAt: '2024-05-14T09:30:00Z',
     evidenceCount: 1,
+    imageUrl: 'https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=400&h=300&fit=crop',
     versions: [
       { id: 'v1', timestamp: '2024-05-14T09:30:00Z', status: 'Draft', declaredBy: 'James Wilson' }
     ]
@@ -103,6 +111,7 @@ export const PRODUCTS: Product[] = [
     status: 'Submitted',
     updatedAt: '2024-05-12T15:20:00Z',
     evidenceCount: 4,
+    imageUrl: 'https://images.unsplash.com/photo-1607616759821-4e16d2c0cf03?w=400&h=300&fit=crop',
     versions: [
       { id: 'v1', timestamp: '2024-05-12T15:20:00Z', status: 'Submitted', declaredBy: 'Maria Garcia' }
     ]
@@ -115,6 +124,7 @@ export const PRODUCTS: Product[] = [
     status: 'Published',
     updatedAt: '2024-05-09T12:10:00Z',
     evidenceCount: 6,
+    imageUrl: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=300&fit=crop',
     versions: [
       { id: 'v3', timestamp: '2024-05-09T12:10:00Z', status: 'Published', declaredBy: 'Priya Sharma' },
       { id: 'v2', timestamp: '2024-05-07T16:00:00Z', status: 'Submitted', declaredBy: 'Priya Sharma' },
@@ -129,6 +139,7 @@ export const PRODUCTS: Product[] = [
     status: 'Published',
     updatedAt: '2024-05-08T14:50:00Z',
     evidenceCount: 3,
+    imageUrl: 'https://images.unsplash.com/photo-1464226184884-fa280b87c399?w=400&h=300&fit=crop',
     versions: [
       { id: 'v2', timestamp: '2024-05-08T14:50:00Z', status: 'Published', declaredBy: 'Thomas Brown' },
       { id: 'v1', timestamp: '2024-05-06T11:25:00Z', status: 'Submitted', declaredBy: 'Thomas Brown' }
@@ -142,6 +153,7 @@ export const PRODUCTS: Product[] = [
     status: 'Draft',
     updatedAt: '2024-05-15T10:15:00Z',
     evidenceCount: 2,
+    imageUrl: 'https://images.unsplash.com/photo-1609091839311-d5365f9ff1c5?w=400&h=300&fit=crop',
     versions: [
       { id: 'v1', timestamp: '2024-05-15T10:15:00Z', status: 'Draft', declaredBy: 'Kim Lee' }
     ]
@@ -154,6 +166,7 @@ export const PRODUCTS: Product[] = [
     status: 'Published',
     updatedAt: '2024-05-07T13:45:00Z',
     evidenceCount: 5,
+    imageUrl: 'https://images.unsplash.com/photo-1583912267550-cc0da4c9f5f8?w=400&h=300&fit=crop',
     versions: [
       { id: 'v3', timestamp: '2024-05-07T13:45:00Z', status: 'Published', declaredBy: 'Dr. Michael Park' },
       { id: 'v2', timestamp: '2024-05-05T15:20:00Z', status: 'Submitted', declaredBy: 'Dr. Michael Park' },
@@ -168,6 +181,7 @@ export const PRODUCTS: Product[] = [
     status: 'Submitted',
     updatedAt: '2024-05-13T11:30:00Z',
     evidenceCount: 4,
+    imageUrl: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?w=400&h=300&fit=crop',
     versions: [
       { id: 'v1', timestamp: '2024-05-13T11:30:00Z', status: 'Submitted', declaredBy: 'David Miller' }
     ]
@@ -180,6 +194,7 @@ export const PRODUCTS: Product[] = [
     status: 'Published',
     updatedAt: '2024-05-06T16:20:00Z',
     evidenceCount: 7,
+    imageUrl: 'https://images.unsplash.com/photo-1548839140-29a749e1cf4d?w=400&h=300&fit=crop',
     versions: [
       { id: 'v4', timestamp: '2024-05-06T16:20:00Z', status: 'Published', declaredBy: 'Sophie Martin' },
       { id: 'v3', timestamp: '2024-05-04T14:30:00Z', status: 'Submitted', declaredBy: 'Sophie Martin' },
@@ -195,6 +210,7 @@ export const PRODUCTS: Product[] = [
     status: 'Draft',
     updatedAt: '2024-05-15T14:00:00Z',
     evidenceCount: 0,
+    imageUrl: 'https://images.unsplash.com/photo-1563453392212-326f5e854473?w=400&h=300&fit=crop',
     versions: [
       { id: 'v1', timestamp: '2024-05-15T14:00:00Z', status: 'Draft', declaredBy: 'Lisa Wong' }
     ]
@@ -207,6 +223,7 @@ export const PRODUCTS: Product[] = [
     status: 'Published',
     updatedAt: '2024-05-10T09:45:00Z',
     evidenceCount: 5,
+    imageUrl: 'https://images.unsplash.com/photo-1519003722824-194d4455a60c?w=400&h=300&fit=crop',
     versions: [
       { id: 'v3', timestamp: '2024-05-10T09:45:00Z', status: 'Published', declaredBy: 'Raj Patel' },
       { id: 'v2', timestamp: '2024-05-08T13:20:00Z', status: 'Submitted', declaredBy: 'Raj Patel' },
@@ -221,6 +238,7 @@ export const PRODUCTS: Product[] = [
     status: 'Submitted',
     updatedAt: '2024-05-12T12:15:00Z',
     evidenceCount: 3,
+    imageUrl: 'https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=400&h=300&fit=crop',
     versions: [
       { id: 'v1', timestamp: '2024-05-12T12:15:00Z', status: 'Submitted', declaredBy: 'Dr. Anna Schmidt' }
     ]
@@ -233,6 +251,7 @@ export const PRODUCTS: Product[] = [
     status: 'Published',
     updatedAt: '2024-05-08T11:30:00Z',
     evidenceCount: 6,
+    imageUrl: 'https://images.unsplash.com/photo-1509391366360-2e959784a276?w=400&h=300&fit=crop',
     versions: [
       { id: 'v2', timestamp: '2024-05-08T11:30:00Z', status: 'Published', declaredBy: 'Carlos Hernandez' },
       { id: 'v1', timestamp: '2024-05-06T14:45:00Z', status: 'Submitted', declaredBy: 'Carlos Hernandez' }
@@ -246,6 +265,7 @@ export const PRODUCTS: Product[] = [
     status: 'Draft',
     updatedAt: '2024-05-14T16:10:00Z',
     evidenceCount: 1,
+    imageUrl: 'https://images.unsplash.com/photo-1567789884554-0b844b597180?w=400&h=300&fit=crop',
     versions: [
       { id: 'v1', timestamp: '2024-05-14T16:10:00Z', status: 'Draft', declaredBy: 'Nina Petrova' }
     ]
@@ -258,6 +278,7 @@ export const PRODUCTS: Product[] = [
     status: 'Published',
     updatedAt: '2024-05-09T15:40:00Z',
     evidenceCount: 8,
+    imageUrl: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=400&h=300&fit=crop',
     versions: [
       { id: 'v4', timestamp: '2024-05-09T15:40:00Z', status: 'Published', declaredBy: 'Kevin Johnson' },
       { id: 'v3', timestamp: '2024-05-07T10:20:00Z', status: 'Submitted', declaredBy: 'Kevin Johnson' },
@@ -273,11 +294,29 @@ export const PRODUCTS: Product[] = [
     status: 'Submitted',
     updatedAt: '2024-05-13T14:25:00Z',
     evidenceCount: 2,
+    imageUrl: 'https://images.unsplash.com/photo-1625938145312-598f0799cc43?w=400&h=300&fit=crop',
     versions: [
       { id: 'v1', timestamp: '2024-05-13T14:25:00Z', status: 'Submitted', declaredBy: 'Emma Wilson' }
     ]
   }
 ];
+
+// Helper function to get a placeholder image for categories
+export const CATEGORY_IMAGES: Record<string, string> = {
+  'Industrial Chemicals': 'https://images.unsplash.com/photo-1532634993-15f421e42ec0?w=400&h=300&fit=crop',
+  'Digital Services': 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=300&fit=crop',
+  'Agrochemicals': 'https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=400&h=300&fit=crop',
+  'Medical Equipment': 'https://images.unsplash.com/photo-1584820927498-cfe5211fd8bf?w=400&h=300&fit=crop',
+  'Industrial Lubricants': 'https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=400&h=300&fit=crop',
+  'Packaging Materials': 'https://images.unsplash.com/photo-1607616759821-4e16d2c0cf03?w=400&h=300&fit=crop',
+  'Energy Storage': 'https://images.unsplash.com/photo-1609091839311-d5365f9ff1c5?w=400&h=300&fit=crop',
+  'Medical Chemicals': 'https://images.unsplash.com/photo-1583912267550-cc0da4c9f5f8?w=400&h=300&fit=crop',
+  'Water Treatment': 'https://images.unsplash.com/photo-1548839140-29a749e1cf4d?w=400&h=300&fit=crop',
+  'Pharmaceutical Materials': 'https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=400&h=300&fit=crop',
+  'Energy Management': 'https://images.unsplash.com/photo-1509391366360-2e959784a276?w=400&h=300&fit=crop',
+  'Industrial Materials': 'https://images.unsplash.com/photo-1567789884554-0b844b597180?w=400&h=300&fit=crop',
+  'All Categories': 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=300&fit=crop'
+};
 
 export const CATEGORIES = [
   'All Categories',
